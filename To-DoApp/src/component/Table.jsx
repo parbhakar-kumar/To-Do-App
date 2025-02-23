@@ -2,7 +2,8 @@ import React from "react";
 
 function Table({ data = [], onEdite, onDelete }) {
   return (
-    <div>
+    <div >
+      <table class="border-width: 1px;" >
       <thead>
         <tr>
           <th>Name</th>
@@ -28,7 +29,9 @@ function Table({ data = [], onEdite, onDelete }) {
           </tr>;
         })}
       </tbody>
-    </div>
+
+      </table>
+          </div>
   );
 }
 
