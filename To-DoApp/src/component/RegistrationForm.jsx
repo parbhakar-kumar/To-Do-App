@@ -8,7 +8,7 @@ function RegistrationForm({ onSubmit, oncancel, initialData }) {
       mobile: "",
       email: "",
       checkIn: "",
-      checkout: "",
+      checkOut: "",
     }
   );
   const handleCancel = (e) => {
@@ -22,21 +22,23 @@ function RegistrationForm({ onSubmit, oncancel, initialData }) {
     e.preventDefault();
     const combinedData = {
       ...formData,
-      name: `${formData.Firstname} ${formData.LastName}`
+      name: `${formData.Firstname} ${formData.LastName}`,
     };
-    console.log('Form submitted with data:', combinedData);
+    console.log("Form submitted with data:", combinedData); // Log the submitted data
     onSubmit(combinedData);
   };
 
   return (
     <div>
-      <form className="form"
+      <form
+        className="form p-4 bg-gray-100 rounded shadow-md"
         onSubmit={handleSubmit}
         action="Thanks for Submition"
-    
       >
         <div>
-          <table>Enter your FirstName</table>
+          <label className="block text-sm font-medium text-gray-700">
+            Enter your FirstName
+          </label>
           <input
             name="Firstname"
             type="text"
@@ -47,7 +49,9 @@ function RegistrationForm({ onSubmit, oncancel, initialData }) {
           />
         </div>
         <div>
-          <table>Enter your LastName</table>
+          <label className="block text-sm font-medium text-gray-700">
+            Enter your LastName
+          </label>
           <input
             name="LastName"
             type="text"
@@ -58,7 +62,9 @@ function RegistrationForm({ onSubmit, oncancel, initialData }) {
           />
         </div>
         <div>
-          <table>Enter your MobileNumber</table>
+          <label className="block text-sm font-medium text-gray-700">
+            Enter your MobileNumber
+          </label>
           <input
             type="number"
             name="mobile"
@@ -69,7 +75,9 @@ function RegistrationForm({ onSubmit, oncancel, initialData }) {
           />
         </div>
         <div>
-          <table>Enter your Email</table>
+          <label className="block text-sm font-medium text-gray-700">
+            Enter your Email
+          </label>
           <input
             type="email"
             name="email"
@@ -80,36 +88,40 @@ function RegistrationForm({ onSubmit, oncancel, initialData }) {
           />
         </div>
         <div>
-          <table>Enter your CheckIn</table>
+          <label className="block text-sm font-medium text-gray-700">
+            Enter your CheckIn
+          </label>
           <input
             type="date"
             name="checkIn"
-            placeholder="Enter your CheckIn"
+            placeholder="Enter your Check-In"
             value={formData.checkIn}
             onChange={handleCancel}
             required
           />
         </div>
         <div>
-          <table>Enter your CheckOut</table>
+          <label className="block text-sm font-medium text-gray-700">
+            Enter your CheckOut
+          </label>
           <input
             type="date"
-            name="checkout"
-            placeholder="Enter your CheckOut"
-            value={formData.checkout}
+            name="checkOut"
+            placeholder="Enter your Check-Out"
+            value={formData.checkOut}
             onChange={handleCancel}
             required
           />
         </div>
-        <div className="Action-forbg-amber-400   hover:bg-amber-600 text-white font-bold py-2 px-4 rounded ">
+        <div>
           <button
-            className="bg-amber-400   hover:bg-amber-600 text-white font-bold py-2 px-4 rounded ml-1"
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded "
             type="submit"
           >
             Submit
           </button>
           <button
-            className="bg-amber-400   hover:bg-amber-600 text-white font-bold py-2 px-4 rounded ml-1"
+            className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4  ml-1 rounded"
             type="cancel"
             onClick={oncancel}
           >
@@ -122,5 +134,3 @@ function RegistrationForm({ onSubmit, oncancel, initialData }) {
 }
 
 export default RegistrationForm;
-{
-}

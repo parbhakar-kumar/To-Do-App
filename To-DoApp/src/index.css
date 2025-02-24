@@ -1,15 +1,7 @@
 
 @import "tailwindcss";
 
-.t{
-    justify-content: space-between;
-    background-color: aqua;
-    padding: 20px;
-    border-radius: 10px;
-    border: 3px solid black;
-    width: 100%;
-    
-}
+
 .th{
     border-radius: 10px;
     border: 3px solid black;
