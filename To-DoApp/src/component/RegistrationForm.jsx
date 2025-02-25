@@ -24,7 +24,6 @@ function RegistrationForm({ onSubmit, oncancel, initialData }) {
       ...formData,
       name: `${formData.Firstname} ${formData.LastName}`,
     };
-    console.log("Form submitted with data:", combinedData); // Log the submitted data
     onSubmit(combinedData);
   };
 
