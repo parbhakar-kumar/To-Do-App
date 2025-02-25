@@ -30,90 +30,17 @@ function RegistrationForm({ onSubmit, oncancel, initialData }) {
 
   return (
     <div>
-      <form
-        className="form p-4 bg-gray-100 rounded shadow-md"
+      <form className="m-6"
         onSubmit={handleSubmit}
         action="Thanks for Submition"
       >
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Enter your FirstName
-          </label>
-          <input
-            name="Firstname"
-            type="text"
-            placeholder="Enter your First name"
-            value={formData.Firstname}
-            onChange={handleCancel}
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Enter your LastName
-          </label>
-          <input
-            name="LastName"
-            type="text"
-            placeholder="Enter your Last name"
-            value={formData.LastName}
-            onChange={handleCancel}
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Enter your MobileNumber
-          </label>
-          <input
-            type="number"
-            name="mobile"
-            placeholder="Enter your MobileNumber"
-            value={formData.mobile}
-            onChange={handleCancel}
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Enter your Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your Email"
-            value={formData.email}
-            onChange={handleCancel}
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Enter your CheckIn
-          </label>
-          <input
-            type="date"
-            name="checkIn"
-            placeholder="Enter your Check-In"
-            value={formData.checkIn}
-            onChange={handleCancel}
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Enter your CheckOut
-          </label>
-          <input
-            type="date"
-            name="checkOut"
-            placeholder="Enter your Check-Out"
-            value={formData.checkOut}
-            onChange={handleCancel}
-            required
-          />
-        </div>
-        <div>
+        <div className="gap-4xl p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your FirstName:</div><input className="border-2"name="Firstname"type="text"placeholder="Enter your First name"value={formData.Firstname}onChange={handleCancel}required /> </div>
+        <div className="gap-4xl p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your LastName:    </div> <input className="border-2" name="LastName" type="text" placeholder="Enter your Last name" value={formData.LastName} onChange={handleCancel} required/></div>
+        <div className="gap-4xl p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your MobileNumber:</div> <input className="border-2" type="number" name="mobile" placeholder="Enter your MobileNumber" value={formData.mobile} onChange={handleCancel} required /></div>
+        <div className="gap-4xl p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your Email:       </div> <input className="border-2" type="email" name="email" placeholder="Enter your Email" value={formData.email} onChange={handleCancel} required /></div>
+        <div className="gap-4xl p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your CheckIn:     </div> <input className="border-2" type="date" name="checkIn" placeholder="Enter your Check-In" value={formData.checkIn} onChange={handleCancel} required /></div>
+        <div className="gap-4xl p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your CheckOut:     </div> <input className="border-2" type="date" name="checkOut" placeholder="Enter your Check-Out" value={formData.checkOut} onChange={handleCancel} required /></div>
+        <div className="gap-4xl p-3 w-3xl m-1.5">
           <button
             className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded "
             type="submit"
