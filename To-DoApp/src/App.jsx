@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div>
-       <h1 className="bg-amber-500 text-5xl text-align: center;" >To-Do-App</h1>
+       <h1 className="bg-amber-500 text-5xl text-center">To-Do-App</h1>
         <button onClick={handleAdd} className="bg-amber-400 mt-1 mb-1 mr-1 ml-1 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded">New Registration</button>
         <Table data={data} onEdit={handleEdit} onDelete={handleDelete} />
         
