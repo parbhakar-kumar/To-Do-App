@@ -29,25 +29,25 @@ function RegistrationForm({ onSubmit, oncancel, initialData }) {
 
   return (
     <div>
-      <form className="m-6"
+      <form className="bg-indigo-100 shadow-xl ml-90 form rounded-3xl "
         onSubmit={handleSubmit}
         action="Thanks for Submission"
       >
-        <div className="gap-4 p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your FirstName:</div><input className="border-2" name="Firstname" type="text" placeholder="Enter your First name" value={formData.Firstname} onChange={handleCancel} required /> </div>
-        <div className="gap-4 p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your LastName:</div> <input className="border-2" name="LastName" type="text" placeholder="Enter your Last name" value={formData.LastName} onChange={handleCancel} required/></div>
-        <div className="gap-4 p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your MobileNumber:</div> <input className="border-2" type="number" name="mobile" placeholder="Enter your MobileNumber" value={formData.mobile} onChange={handleCancel} required /></div>
-        <div className="gap-4 p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your Email:</div> <input className="border-2" type="email" name="email" placeholder="Enter your Email" value={formData.email} onChange={handleCancel} required /></div>
-        <div className="gap-4 p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your CheckIn:</div> <input className="border-2" type="date" name="checkIn" placeholder="Enter your Check-In" value={formData.checkIn} onChange={handleCancel} required /></div>
-        <div className="gap-4 p-3 w-3xl m-1.5"> <div className="text-2xl">Enter your CheckOut:</div> <input className="border-2" type="date" name="checkOut" placeholder="Enter your Check-Out" value={formData.checkOut} onChange={handleCancel} required /></div>
-        <div className="gap-4 p-3 w-3xl m-1.5">
+        <div className="gap-4 p-1.5 w-2xl m-0.5 text-conent"> <div className="text-2xl">Enter your FirstName:</div><input className="border-2" name="Firstname" type="text" placeholder="Enter your First name" value={formData.Firstname} onChange={handleCancel} required /> </div>
+        <div className="gap-4 p-1.5 w-2xl m-0.5 text-conent"> <div className="text-2xl">Enter your LastName:</div> <input className="border-2" name="LastName" type="text" placeholder="Enter your Last name" value={formData.LastName} onChange={handleCancel} required/></div>
+        <div className="gap-4 p-1.5 w-2xl m-0.5 text-conent"> <div className="text-2xl">Enter your MobileNumber:</div> <input className="border-2" type="number" name="mobile" placeholder="Enter your MobileNumber" value={formData.mobile} onChange={handleCancel} required /></div>
+        <div className="gap-4 p-1.5 w-2xl m-0.5 text-conent"> <div className="text-2xl">Enter your Email:</div> <input className="border-2" type="email" name="email" placeholder="Enter your Email" value={formData.email} onChange={handleCancel} required /></div>
+        <div className="gap-4 p-1.5 w-2xl m-0.5 text-conent"> <div className="text-2xl">Enter your CheckIn:</div> <input className="border-2" type="date" name="checkIn" placeholder="Enter your Check-In" value={formData.checkIn} onChange={handleCancel} required /></div>
+        <div className="gap-4 p-1.5 w-2xl m-0.5 text-conent"> <div className="text-2xl">Enter your CheckOut:</div> <input className="border-2" type="date" name="checkOut" placeholder="Enter your Check-Out" value={formData.checkOut} onChange={handleCancel} required /></div>
+        <div className="gap-4 p-1.5 w-2xl m-0.5 text-conent">
           <button
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded "
+            className="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700 "
             type="submit"
           >
             Submit
           </button>
           <button
-            className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 ml-1 rounded"
+            className="px-4 py-2 ml-1 font-bold text-white bg-red-500 rounded hover:bg-red-700"
             type="button"
             onClick={oncancel}
           >

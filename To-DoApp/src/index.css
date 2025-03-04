@@ -10,3 +10,9 @@
 h1{
     text-align: center;
 }
+.form{
+    height: 30%;
+    width: 25%;
+
+    justify-content:space-around;
+}
